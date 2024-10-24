@@ -1,0 +1,18 @@
+services:
+  database:
+    image: 'postgres:latest'
+    ports:
+      - 127.0.0.1:5432:5432
+    env_file:
+      - .env
+    environment:
+      POSTGRES_DB: test_db
+    networks:
+      - postgres-network
+    volumes:
+      - ${PWD}/db-data/:/var/lib/postgresql/data/
+      - ${PWD}/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+networks: 
+  postgres-network:
+    driver: bridge
