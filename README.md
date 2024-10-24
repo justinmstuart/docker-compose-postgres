@@ -1,0 +1,33 @@
+# Docker Compose Postgres
+
+This project uses Docker Compose to set up a PostgreSQL database.
+
+## Prerequisites
+
+- Docker
+- Docker Compose
+
+## Makefile Commands
+
+### `make up`
+Start the Docker containers in the background.
+
+### `make down`
+Stop and remove the Docker containers.
+
+### `make clean`
+Removes docker container and deletes the db-data directory.
+
+## Connecting to DB
+
+Host name/address: 127.0.0.1
+Port: 5432
+
+## .env
+
+Create `.env` file in root of project.
+
+```
+POSTGRES_USER: your_username
+POSTGRES_PASSWORD: your_password
+```
