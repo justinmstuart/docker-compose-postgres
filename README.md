@@ -28,6 +28,10 @@ Port: 5432
 Create `.env` file in root of project.
 
 ```
+#Docker Container
+POSTGRES_CONTAINER_NAME: your_container_name
+
+# DB
 POSTGRES_USER: your_username
 POSTGRES_PASSWORD: your_password
 ```

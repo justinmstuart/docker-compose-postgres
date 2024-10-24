@@ -5,4 +5,4 @@ down:
 	docker-compose down
 
 clean:
-	docker rm docker-compose-postgres && sudo rm -rf db-data
+	docker rm $(shell grep POSTGRES_CONTAINER_NAME .env | cut -d ':' -f2) && sudo rm -rf db-data
