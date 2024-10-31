@@ -9,11 +9,14 @@ This project uses Docker Compose to set up a PostgreSQL database.
 
 ## Makefile Commands
 
-### `make up`
-Start the Docker containers in the background.
+### `make start`
+Start the Docker container in the background.
+
+### `make stop`
+Stops the Docker container.
 
 ### `make down`
-Stop and remove the Docker containers.
+Removes the Docker containers.
 
 ### `make clean`
 Removes docker container and deletes the db-data directory.

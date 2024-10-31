@@ -8,6 +8,8 @@ services:
       - .env
     environment:
       POSTGRES_DB: test_db
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     networks:
       - postgres-network
     volumes:

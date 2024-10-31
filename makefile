@@ -1,8 +1,11 @@
-up:
-	docker-compose up
+start:
+	docker-compose up -d
+
+stop:
+	docker-compose stop
 
 down:
 	docker-compose down
 
 clean:
-	docker rm $(shell grep POSTGRES_CONTAINER_NAME .env | cut -d ':' -f2) && sudo rm -rf db-data
+	make down && sudo rm -rf ./db/db-data
