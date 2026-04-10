@@ -1,5 +1,8 @@
 # Docker Compose Postgres
 
+![Docker](https://img.shields.io/badge/docker-blue?logo=docker&logoColor=white)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 This project uses Docker Compose to set up a PostgreSQL database.
 
 ## Prerequisites
